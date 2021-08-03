@@ -1,104 +1,278 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Get Game Codes #
 
-Welcome ThomasMSmit,
+## A place for gamers to get there game keys ##
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. The last update to this file was: **July 2, 2021**
+![Header Image]
 
-## Gitpod Reminders
+## Project goals ##
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+To give Gamers a site where they can buy there favorite game keys, and read or leave reviews about the games they bought or want to buy.  
 
-`python3 -m http.server`
+- [Project goals](#project-goals)
+- [UX](#ux)
+  - [User Goals](#user-goals)
+  - [Scope](#scope)
+- [Structure of the website](#structure-of-the-website)
+  - [View for a guest user](#view-for-a-guest-user)
+  - [View for logged in user](#view-for-logged-in-user)
+  - [User Stories](#user-stories)
+- [User Requirements and Expectations](#user-requirements-and-expectations)
+  - [Requirements](#requirements)
+  - [Expectations](#expectations)
+- [Design Choices](#design-choices)
+  - [When and why i've diverted from the wireframes](#when-and-why-i-ve-diverted-from-the-wireframes)
+  - [Colors](#colors)
+  - [Fonts](#fonts)
+  - [Icons](#icons)
+  - [Structure](#structure)
+- [Wireframes and Data Models](#wireframes-and-data-models)
+  - [Wireframes](#wireframes)
+  - [Data Models](#data-models)
+- [Profiles app](#profiles-app)
+- [Workshops app](#workshops-app)
+  - [Category Model](#category-model)
+  - [Workshop Model](#workshop-model)
+- [Blog app](#blog-app)
+  - [Blog Model](#blog-model)
+  - [Blog Commments](#blog-commments)
+- [Therapists app](#therapists-app)
+- [Features](#features)
+  - [Features that are implemented](#features-that-are-implemented)
+  - [Features to be implemented](#features-to-be-implemented)
+- [Technologies used](#technologies-used)
+  - [Languages](#languages)
+  - [Libraries and Frameworks](#libraries-and-frameworks)
+    -[Front End](#front-end)
+    -[Back End](#back-end)
+  - [Tools](#tools)
+- [Testing and Bugs](#testing-and-bugs)
+- [Deployment](#deployment)
+  - [Local Deployment](#local-deployment)
+- [Credit](#credit)
+  - [Source credits](#source-credits)
+  - [Image credits](#image-credits)
+  - [Special thanks](#special-thanks)
+  
+## UX ##
 
-A blue button should appear to click: _Make Public_,
+### User Goals ###
 
-Another blue button should appear to click: _Open Browser_.
+- The website has to work well on all kind of devices like mobile phones, tables and desktops
+- The login procedure should be clear and feedback should be given when appropriate
+- The registration process should be clear, easy to do and feedback should be given when appropriate
+- The website has to be easy to use and easy to update information
+- Visually appealing website
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Scope ###
 
-A blue button should appear to click: _Make Public_,
+An easy to navigate and responsive website that is fun to use and allows users as well as site owners, to perform CRUD operations. Users can sign up and, once logged in, they can leave reviews about games. These users can see their purchase history, and manage their account settings.
 
-Another blue button should appear to click: _Open Browser_.
+## Structure of the website ##
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+### View for a guest user ###
 
-To log into the Heroku toolbelt CLI:
+A user that is not logged in and/or registered, will see a homepage with a list of multiple games that they can buy. Starting with the highest ranked game avalible.
+The user will be given the option to create an account on every page, where they can view their purchase history and gives them the option to leave reviews on games they have bought.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### View for logged in user ###
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+A logged in user will benefit from the full functionality of the site. The navigation bar will contain an extra button called: 'Logout' when they are logged into their account.
+This user is now able to leave reviews on games they have purchased and register themselfs for the site blog where gamers share there full experiences with their favorite game.
+In the profile tab they can see and change their personal information and view their purchase history.
 
-------
+### User Stories ###
 
-## Release History
+This file is by no means complete. During development there might be some added or removed, depending on functionality and usability.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+| as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
+|-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| User        | easily navigate the site on mobile, Desktop and tablet                         | so I can quickly look if the game I am looking for is on here                                                |
+|             | view a list of games to buy                                                    | choose something to buy                                                                                      |
+|             | read blog posts                                                                | so I get informed about games I’m planning to buy                                                            |
+|             | Easily register for an account                                                 | Have a personal account                                                                                      |
+|             | Sort the list of games                                                         | See best rates, best prices and search product by category                                                   |
+|             | Sort for specific game category or platform                                    | Find best-priced or best-rated product in a specific category                                                |
+|             | Easily see what I’ve searched for and the Number of results                    | Quickly decide whether the product I want is available                                                       |
+| User        | Easy to follow payment procedure                                               | So I can order quickly and start gaming                                                                      |
+|             | View the items in my bag                                                       | So I can see what I’ve ordered and what the total cost is                                                    |
+|             | Enter my payment info easily                                                   | Check out quickly without problems                                                                           |
+|             | Have my information stored secure                                              | Rest assured my personal info is safe                                                                        |
+|             | Get an order confirmation with game key after checkout                         | Keep a copy for future reference/waranty                                                                     |
+|             | easily leave a review                                                          | So i can let people know what i think about the game                                                         |
+|             | Easily login or logout                                                         | Access my personal account information                                                                       |
+|             | Easily recover my password in case I forgot                                    | Recover access to my account                                                                                 |
+|             | Receive an email confirmation after registering                                | Verify that my account registration was successful                                                           |
+|             | Have a personalized account page                                               | View my personal order history and order confirmations and save My payment information                       |
+|             | Get a subscription to receive an email when A new newsletter becomes available | So I can check if there are any deals on games i'd like to buy                                               |
+| Store owner | Add a product                                                                  | Add new items to my store                                                                                    |
+|             | Edit a product                                                                 | Edt product details                                                                                          |
+|             | Delete a product                                                               | Delete a product                                                                                             |
+|             | Add blog posts                                                                 | So I can inform registered users about games they might want to buy                                          |
+|             | Edit Blog posts                                                                | So I can change the content of a blog I have posted                                                          |
+|             | Delete blogposts                                                               | So I can remove a blog I have posted                                                                         |
+|             | Add owners review                                                              | So i can give my personal opinion on a game                                                                  |
+|             | Edit owners review                                                             | So i can change my opinion on a game                                                                         |
+|             | Delete owners review                                                           | so i can remove my opinion on a game                                                                         |
+|             |                                                                                |                                                                                                              |
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+## User Requirements and Expectations ##
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+### Requirements ###
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Easy to navigate by using buttons in navbar
+- functional account page with a good overview
+- Easy way to find the game they are looking for
+- Ability to save favorite games to wishlist
+- Ability to contact the site owner
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Expectations ###
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Registering for an account should be easy and straight forward.
+- To have a account page that has a clear overview of games I have bought and my personal info.
+- It should be easy and quick to buy an game.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+## Design Choices ##
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Colors ###
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Fonts ###
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
 
-## FAQ about the uptime script
+### Icons ###
 
-**Why have you added this script?**
+Icons used are from [Font Awesome.](https://fontawesome.com/) The are used in moderation and match the colors and overall feel of the design.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
 
-**How will this affect me?**
+### Structure ###
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+For the structure I have used [Bootstrap.](https://getbootstrap.com/)
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## Wireframes and Data Models ##
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Wireframes where created at the very beginning of this project, and have been followed as much as possible.
 
-**So….?**
+### Wireframes ###
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
 
-**Can I opt out?**
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Data Models ###
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+During the development, I worked with sqlite3 databases, installed with Django. For production I have used [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql).
 
-**Anything more?**
+- The User model I have used in this project was provided by Django Allauth. It is a part of default django.contrib.auth.models.
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
 
----
 
-Happy coding!
+
+
+## Features ##
+
+### Features that are implemented ###
+
+- Registration functionality
+- Log In and Out functionality
+- Able to leave reviews on purchased games
+- Sign Up for newsletter (MailChimp)
+- Contact site owner
+- Having a profile page
+- Blog (with comments section)
+
+- CRUD Functions:
+- Create:
+  - Account (profile)
+  - Comment on blog
+  - Add review to game
+
+- Read:
+  - Account (profile)
+  - General info (game info, game reviews, purchased games, blog and blog comments)
+
+- Update:
+  - Account(profile)
+  - Blog Posts
+  - reviews
+  
+### Features to be implemented ###
+
+
+
+
+
+## Technologies used ##
+
+### Languages ###
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JS](https://nl.wikipedia.org/wiki/JavaScript)
+- [Python](https://www.python.org/)
+
+### Libraries and Frameworks ###
+
+## Front End ##
+
+- [Font Awesome](https://fontawesome.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [jQuery](https://jquery.com/)
+
+## Back End ##
+
+- [Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html)
+- [Pillow](https://pypi.org/project/Pillow/)
+- [Gunicorn](https://gunicorn.org/)
+- [PEP8](http://pep8online.com/)
+- [Stripe](https://stripe.com/en-nl)
+
+### Tools ###
+
+- [Git](https://git-scm.com/)
+- [GitPod](https://www.gitpod.io/)
+- [Heroku](https://www.heroku.com/)
+- [LucidChart](https://www.lucidchart.com/pages/)
+- [W3C HTML Validation Service](https://validator.w3.org/)
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
+- [Gimp](https://www.gimp.org/)
+
+## Testing and Bugs ##
+
+
+
+## Deployment ##
+
+
+### Local Deployment ###
+
+
+
+
+
+
+
+
+## Credit ##
+
+
+
+### Source credits ###
+
+
+
+
+### Image credits ###
+
+
+
+
+### Special thanks ###
+
+
+
+
+**Site for educational purposes only!**
