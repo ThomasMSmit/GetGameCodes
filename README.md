@@ -57,7 +57,7 @@ To give Gamers a site where they can buy there favorite game keys, and read or l
 
 ### User Goals ###
 
-- The website has to work well on all kind of devices like mobile phones, tables and desktops
+- The website has to work well on all devices like mobile phones, tables and desktops
 - The login procedure should be clear and feedback should be given when appropriate
 - The registration process should be clear, easy to do and feedback should be given when appropriate
 - The website has to be easy to use and easy to update information
@@ -82,7 +82,7 @@ In the profile tab they can see and change their personal information and view t
 
 ### User Stories ###
 
-This file is by no means complete. During development there might be some added or removed, depending on functionality and usability.
+This file is not complete. Changes might be made during development, depending on functionality and usability.
 
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
@@ -133,20 +133,31 @@ This file is by no means complete. During development there might be some added 
 
 ## Design Choices ##
 
-
+I chose a simple design that doesn't distract users from the main goal of the site, selling games.
 
 ### Colors ###
 
+I have used [Coolors](https://coolors.co/) for creating my color scheme.
 
+![Color scheme](wireframes/color_pallet.png)
+
+FFFFFF : Mainly for text on the site as the background are dark colors.
+1F143D : As main background color.
+192839 : For navbar and footer background.
+CC0000 : Used mainly for important messages or discount icons.
+00CC00 : Main use is for most buttons on the site.
 
 ### Fonts ###
 
+For headers and titles on the site: [Inter](https://fonts.google.com/specimen/Inter?preview.text=Get%20Game%20Codes&preview.text_type=custom)
 
+For main text on the site: [Roboto](https://fonts.google.com/specimen/Roboto)
+
+Fonts are from [Google Fonts.](https://fonts.google.com/)
 
 ### Icons ###
 
 Icons used are from [Font Awesome.](https://fontawesome.com/) The are used in moderation and match the colors and overall feel of the design.
-
 
 ### Structure ###
 
