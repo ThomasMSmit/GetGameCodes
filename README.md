@@ -2,11 +2,11 @@
 
 ## A place for gamers to get there game keys ##
 
-![Header Image]
+![Header Image](wireframes/header_image.png)
 
 ## Project goals ##
 
-To give Gamers a site where they can buy there favorite game keys, and read or leave reviews about the games they bought or want to buy.  
+To give Gamers a site where they can buy there favorite game keys, and read or leave reviews about the games they bought or want to buy.
 
 - [Project goals](#project-goals)
 - [UX](#ux)
@@ -86,33 +86,33 @@ This file is not complete. Changes might be made during development, depending o
 
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| User        | easily navigate the site on mobile, Desktop and tablet                         | so I can quickly look if the game I am looking for is on here                                                |
-|             | view a list of games to buy                                                    | choose something to buy                                                                                      |
-|             | read blog posts                                                                | so I get informed about games I’m planning to buy                                                            |
+| User        | Easily navigate the site on mobile, Desktop and tablet                         | So I can quickly look if the game I am looking for is on here                                                |
+|             | View a list of games to buy                                                    | Choose something to buy                                                                                      |
+|             | Read blog posts                                                                | So I get informed about games I’m planning to buy                                                            |
 |             | Easily register for an account                                                 | Have a personal account                                                                                      |
 |             | Sort the list of games                                                         | See best rates, best prices and search product by category                                                   |
 |             | Sort for specific game category or platform                                    | Find best-priced or best-rated product in a specific category                                                |
 |             | Easily see what I’ve searched for and the Number of results                    | Quickly decide whether the product I want is available                                                       |
-| User        | Easy to follow payment procedure                                               | So I can order quickly and start gaming                                                                      |
+|Logged User  | Easy to follow payment procedure                                               | So I can order quickly and start gaming                                                                      |
 |             | View the items in my bag                                                       | So I can see what I’ve ordered and what the total cost is                                                    |
 |             | Enter my payment info easily                                                   | Check out quickly without problems                                                                           |
 |             | Have my information stored secure                                              | Rest assured my personal info is safe                                                                        |
 |             | Get an order confirmation with game key after checkout                         | Keep a copy for future reference/waranty                                                                     |
-|             | easily leave a review                                                          | So i can let people know what i think about the game                                                         |
+|             | Easily leave a review                                                          | So I can let people know what I think about the game                                                         |
 |             | Easily login or logout                                                         | Access my personal account information                                                                       |
 |             | Easily recover my password in case I forgot                                    | Recover access to my account                                                                                 |
 |             | Receive an email confirmation after registering                                | Verify that my account registration was successful                                                           |
 |             | Have a personalized account page                                               | View my personal order history and order confirmations and save My payment information                       |
-|             | Get a subscription to receive an email when A new newsletter becomes available | So I can check if there are any deals on games i'd like to buy                                               |
+|             | Get a subscription to receive an email when A new newsletter becomes available | So I can check if there are any deals on games I'd like to buy                                               |
 | Store owner | Add a product                                                                  | Add new items to my store                                                                                    |
 |             | Edit a product                                                                 | Edt product details                                                                                          |
 |             | Delete a product                                                               | Delete a product                                                                                             |
 |             | Add blog posts                                                                 | So I can inform registered users about games they might want to buy                                          |
 |             | Edit Blog posts                                                                | So I can change the content of a blog I have posted                                                          |
 |             | Delete blogposts                                                               | So I can remove a blog I have posted                                                                         |
-|             | Add owners review                                                              | So i can give my personal opinion on a game                                                                  |
-|             | Edit owners review                                                             | So i can change my opinion on a game                                                                         |
-|             | Delete owners review                                                           | so i can remove my opinion on a game                                                                         |
+|             | Add owners review                                                              | So I can give my personal opinion on a game                                                                  |
+|             | Edit owners review                                                             | So I can change my opinion on a game                                                                         |
+|             | Delete owners review                                                           | So I can remove my opinion on a game                                                                         |
 |             |                                                                                |                                                                                                              |
 
 ## User Requirements and Expectations ##
@@ -245,11 +245,12 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 - [Git](https://git-scm.com/)
 - [GitPod](https://www.gitpod.io/)
 - [Heroku](https://www.heroku.com/)
-- [LucidChart](https://www.lucidchart.com/pages/)
+- [Balsamiq](https://balsamiq.com/)
 - [W3C HTML Validation Service](https://validator.w3.org/)
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
 - [Gimp](https://www.gimp.org/)
+- [Tinypng](https://tinypng.com/)
 
 ## Testing and Bugs ##
 
