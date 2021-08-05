@@ -1,6 +1,6 @@
 # Get Game Codes #
 
-## A place for gamers to get there game keys ##
+## A place for gamers to get their game keys ##
 
 ![Header Image](wireframes/header_image.png)
 
@@ -169,7 +169,11 @@ Wireframes where created at the very beginning of this project, and have been fo
 
 ### Wireframes ###
 
+For creating my wireframes I have used [Balsamiq](https://balsamiq.com/)
 
+[Desktop](wireframes/wireframes_desktop.pdf)
+
+[Tablet and Mobile](wireframes/wireframes_tabletmobile.pdf)
 
 ### Data Models ###
 
