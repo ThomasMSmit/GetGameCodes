@@ -141,7 +141,7 @@ I have used [Coolors](https://coolors.co/) for creating my color scheme.
 
 ![Color scheme](wireframes/color_pallet.png)
 
-FFFFFF : Mainly for text on the site as the background are dark colors.
+FFFFFF : Mainly for text on the site as the backgrounds are dark colors.
 1F143D : As main background color.
 192839 : For navbar and footer background.
 CC0000 : Used mainly for important messages or discount icons.
@@ -158,6 +158,8 @@ Fonts are from [Google Fonts.](https://fonts.google.com/)
 ### Icons ###
 
 Icons used are from [Font Awesome.](https://fontawesome.com/) The are used in moderation and match the colors and overall feel of the design.
+
+Icon used in logo is from [flaticon](https://www.flaticon.com/)
 
 ### Structure ###
 
@@ -255,6 +257,7 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
 - [Gimp](https://www.gimp.org/)
 - [Tinypng](https://tinypng.com/)
+- [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
 
 ## Testing and Bugs ##
 
