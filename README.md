@@ -142,8 +142,8 @@ I have used [Coolors](https://coolors.co/) for creating my color scheme.
 ![Color scheme](wireframes/color_pallet.png)
 
 FFFFFF : Mainly for text on the site as the backgrounds are dark colors.
-1F143D : As main background color.
-192839 : For navbar and footer background.
+192839 : As main background color.
+1F143D : For navbar and footer background.
 CC0000 : Used mainly for important messages or discount icons.
 00CC00 : Main use is for most buttons on the site.
 
