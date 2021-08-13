@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    background-color: #192839;
 }
 
 body {
@@ -16,6 +17,15 @@ body {
 
 .nav-links {
     background: #1F143D;
+}
+
+.card {
+    background-color: #1F143D;
+}
+
+.product-details-container {
+    background-color: #1F143D;
+    padding: 1rem;
 }
 
 /* from Bulma */
@@ -74,7 +84,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #192839;
 	z-index: -1;
 }
 
@@ -182,7 +192,7 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content p {
     margin-top: 1.5rem; /* mt-4 */
-    color: #6c757d; /* text-secondary */
+    color: #ffffff; /* text-secondary */
 }
 
 .allauth-form-inner-content input {
