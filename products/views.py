@@ -138,3 +138,23 @@ def delete_product(request, product_id):
 
 def pc_products(request):
     return render(request, 'products/navbar-links/pc_products.html')
+
+
+def psn_products(request):
+    return render(request, 'products/navbar-links/psn_products.html')
+
+
+def xbox_products(request):
+    return render(request, 'products/navbar-links/xbox_products.html')
+
+
+def nintendo_products(request):
+    return render(request, 'products/navbar-links/nintendo_products.html')
+
+
+def sale_products(request):
+    return render(request, 'products/navbar-links/sale_products.html')
+
+
+def wishlist(request):
+    return render(request, 'products/navbar-links/wishlist.html')
