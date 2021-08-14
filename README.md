@@ -6,9 +6,8 @@
 
 ## Project goals ##
 
-To give Gamers a site where they can buy there favorite game keys, and read or leave reviews about the games they bought or want to buy.
+To give Gamers a site where they can buy their favorite game keys, and read or leave reviews about the games they bought or want to buy.
 
-- [Project goals](#project-goals)
 - [UX](#ux)
   - [User Goals](#user-goals)
   - [Scope](#scope)
@@ -20,7 +19,6 @@ To give Gamers a site where they can buy there favorite game keys, and read or l
   - [Requirements](#requirements)
   - [Expectations](#expectations)
 - [Design Choices](#design-choices)
-  - [When and why i've diverted from the wireframes](#when-and-why-i-ve-diverted-from-the-wireframes)
   - [Colors](#colors)
   - [Fonts](#fonts)
   - [Icons](#icons)
@@ -28,22 +26,14 @@ To give Gamers a site where they can buy there favorite game keys, and read or l
 - [Wireframes and Data Models](#wireframes-and-data-models)
   - [Wireframes](#wireframes)
   - [Data Models](#data-models)
-- [Profiles app](#profiles-app)
-- [Workshops app](#workshops-app)
-  - [Category Model](#category-model)
-  - [Workshop Model](#workshop-model)
-- [Blog app](#blog-app)
-  - [Blog Model](#blog-model)
-  - [Blog Commments](#blog-commments)
-- [Therapists app](#therapists-app)
 - [Features](#features)
   - [Features that are implemented](#features-that-are-implemented)
   - [Features to be implemented](#features-to-be-implemented)
 - [Technologies used](#technologies-used)
   - [Languages](#languages)
   - [Libraries and Frameworks](#libraries-and-frameworks)
-    -[Front End](#front-end)
-    -[Back End](#back-end)
+- [Front End](#front-end)
+- [Back End](#back-end)
   - [Tools](#tools)
 - [Testing and Bugs](#testing-and-bugs)
 - [Deployment](#deployment)
@@ -52,7 +42,7 @@ To give Gamers a site where they can buy there favorite game keys, and read or l
   - [Source credits](#source-credits)
   - [Image credits](#image-credits)
   - [Special thanks](#special-thanks)
-  
+
 ## UX ##
 
 ### User Goals ###
@@ -86,33 +76,33 @@ This file is not complete. Changes might be made during development, depending o
 
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| User        | Easily navigate the site on mobile, Desktop and tablet                         | So I can quickly look if the game I am looking for is on here                                                |
+| User        | Easily navigate the site on mobile, Desktop and tablet                         | Quickly look if the game I am looking for is on the site                                                     |
 |             | View a list of games to buy                                                    | Choose something to buy                                                                                      |
-|             | Read blog posts                                                                | So I get informed about games I’m planning to buy                                                            |
+|             | Read blog posts                                                                | Get informed about games I’m planning to buy                                                                 |
 |             | Easily register for an account                                                 | Have a personal account                                                                                      |
 |             | Sort the list of games                                                         | See best rates, best prices and search product by category                                                   |
 |             | Sort for specific game category or platform                                    | Find best-priced or best-rated product in a specific category                                                |
 |             | Easily see what I’ve searched for and the Number of results                    | Quickly decide whether the product I want is available                                                       |
-|Logged User  | Easy to follow payment procedure                                               | So I can order quickly and start gaming                                                                      |
-|             | View the items in my bag                                                       | So I can see what I’ve ordered and what the total cost is                                                    |
+|Logged User  | Easy to follow payment procedure                                               | Order quickly and start gaming                                                                               |
+|             | View the items in my bag                                                       | See what I’ve ordered and what the total cost is                                                             |
 |             | Enter my payment info easily                                                   | Check out quickly without problems                                                                           |
 |             | Have my information stored secure                                              | Rest assured my personal info is safe                                                                        |
 |             | Get an order confirmation with game key after checkout                         | Keep a copy for future reference/waranty                                                                     |
-|             | Easily leave a review                                                          | So I can let people know what I think about the game                                                         |
+|             | Easily leave a review                                                          | Let people know what I think about the game                                                                  |
 |             | Easily login or logout                                                         | Access my personal account information                                                                       |
 |             | Easily recover my password in case I forgot                                    | Recover access to my account                                                                                 |
 |             | Receive an email confirmation after registering                                | Verify that my account registration was successful                                                           |
 |             | Have a personalized account page                                               | View my personal order history and order confirmations and save My payment information                       |
-|             | Get a subscription to receive an email when A new newsletter becomes available | So I can check if there are any deals on games I'd like to buy                                               |
+|             | Get a subscription to receive an email when A new newsletter becomes available | Check if there are any deals on games I'd like to buy                                               |
 | Store owner | Add a product                                                                  | Add new items to my store                                                                                    |
 |             | Edit a product                                                                 | Edt product details                                                                                          |
 |             | Delete a product                                                               | Delete a product                                                                                             |
-|             | Add blog posts                                                                 | So I can inform registered users about games they might want to buy                                          |
-|             | Edit Blog posts                                                                | So I can change the content of a blog I have posted                                                          |
-|             | Delete blogposts                                                               | So I can remove a blog I have posted                                                                         |
-|             | Add owners review                                                              | So I can give my personal opinion on a game                                                                  |
-|             | Edit owners review                                                             | So I can change my opinion on a game                                                                         |
-|             | Delete owners review                                                           | So I can remove my opinion on a game                                                                         |
+|             | Add blog posts                                                                 | Inform registered users about games they might want to buy                                          |
+|             | Edit Blog posts                                                                | Change the content of a blog I have posted                                                          |
+|             | Delete blogposts                                                               | Remove a blog I have posted                                                                         |
+|             | Add owners review                                                              | Give my personal opinion on a game                                                                  |
+|             | Edit owners review                                                             | Change my opinion on a game                                                                         |
+|             | Delete owners review                                                           | Remove my opinion on a game                                                                         |
 |             |                                                                                |                                                                                                              |
 
 ## User Requirements and Expectations ##
@@ -183,10 +173,6 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 - The User model I have used in this project was provided by Django Allauth. It is a part of default django.contrib.auth.models.
 
-
-
-
-
 ## Features ##
 
 ### Features that are implemented ###
@@ -197,28 +183,27 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 - Sign Up for newsletter (MailChimp)
 - Contact site owner
 - Having a profile page
-- Blog (with comments section)
+- Able to add games to wishlist
 
 - CRUD Functions:
 - Create:
   - Account (profile)
-  - Comment on blog
   - Add review to game
+  - Create wishlist
 
 - Read:
   - Account (profile)
-  - General info (game info, game reviews, purchased games, blog and blog comments)
+  - General info (game info, game reviews, purchased games,)
+  - Wishlist
 
 - Update:
   - Account(profile)
-  - Blog Posts
   - reviews
-  
+  - Wishlist
+
 ### Features to be implemented ###
 
-
-
-
+- Giftcards (for Steam, Epic Games, Psn store etc..)
 
 ## Technologies used ##
 
@@ -258,40 +243,23 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 - [Gimp](https://www.gimp.org/)
 - [Tinypng](https://tinypng.com/)
 - [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
+- [For generating a table of content:](http://ecotrust-canada.github.io/markdown-toc/)
 
 ## Testing and Bugs ##
 
-
-
 ## Deployment ##
-
 
 ### Local Deployment ###
 
-
-
-
-
-
-
-
 ## Credit ##
-
-
 
 ### Source credits ###
 
-
-
-
 ### Image credits ###
 
-
-
+I used [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) for creating my [logo](media/logo.png)
+The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 
 ### Special thanks ###
-
-
-
 
 **Site for educational purposes only!**
