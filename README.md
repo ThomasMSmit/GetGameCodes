@@ -6,7 +6,7 @@
 
 ## Project goals ##
 
-To give Gamers a site where they can buy their favorite game keys, and read or leave reviews about the games they bought or want to buy.
+To give gamers a site where they can buy their favorite game keys, and read or leave reviews about the games they bought or want to buy.
 
 - [UX](#ux)
   - [User Goals](#user-goals)
@@ -76,33 +76,30 @@ This file is not complete. Changes might be made during development, depending o
 
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| User        | Easily navigate the site on mobile, Desktop and tablet                         | Quickly look if the game I am looking for is on the site                                                     |
-|             | View a list of games to buy                                                    | Choose something to buy                                                                                      |
-|             | Read blog posts                                                                | Get informed about games I’m planning to buy                                                                 |
-|             | Easily register for an account                                                 | Have a personal account                                                                                      |
-|             | Sort the list of games                                                         | See best rates, best prices and search product by category                                                   |
-|             | Sort for specific game category or platform                                    | Find best-priced or best-rated product in a specific category                                                |
-|             | Easily see what I’ve searched for and the Number of results                    | Quickly decide whether the product I want is available                                                       |
-|Logged User  | Easy to follow payment procedure                                               | Order quickly and start gaming                                                                               |
-|             | View the items in my bag                                                       | See what I’ve ordered and what the total cost is                                                             |
-|             | Enter my payment info easily                                                   | Check out quickly without problems                                                                           |
-|             | Have my information stored secure                                              | Rest assured my personal info is safe                                                                        |
-|             | Get an order confirmation with game key after checkout                         | Keep a copy for future reference/waranty                                                                     |
-|             | Easily leave a review                                                          | Let people know what I think about the game                                                                  |
-|             | Easily login or logout                                                         | Access my personal account information                                                                       |
-|             | Easily recover my password in case I forgot                                    | Recover access to my account                                                                                 |
-|             | Receive an email confirmation after registering                                | Verify that my account registration was successful                                                           |
-|             | Have a personalized account page                                               | View my personal order history and order confirmations and save My payment information                       |
-|             | Get a subscription to receive an email when A new newsletter becomes available | Check if there are any deals on games I'd like to buy                                               |
-| Store owner | Add a product                                                                  | Add new items to my store                                                                                    |
-|             | Edit a product                                                                 | Edt product details                                                                                          |
-|             | Delete a product                                                               | Delete a product                                                                                             |
-|             | Add blog posts                                                                 | Inform registered users about games they might want to buy                                          |
-|             | Edit Blog posts                                                                | Change the content of a blog I have posted                                                          |
-|             | Delete blogposts                                                               | Remove a blog I have posted                                                                         |
-|             | Add owners review                                                              | Give my personal opinion on a game                                                                  |
-|             | Edit owners review                                                             | Change my opinion on a game                                                                         |
-|             | Delete owners review                                                           | Remove my opinion on a game                                                                         |
+| User        | easily navigate the site on mobile, Desktop and tablet                         | quickly look if the game I am looking for is on the site                                                     |
+|             | view a list of games to buy                                                    | choose something to buy                                                                                      |
+|             | read blog posts                                                                | get informed about games I’m planning to buy                                                                 |
+|             | easily register for an account                                                 | have a personal account                                                                                      |
+|             | sort the list of games                                                         | see best rates, best prices and search product by category                                                   |
+|             | sort for specific game category or platform                                    | find best-priced or best-rated product in a specific category                                                |
+|             | easily see what I’ve searched for and the Number of results                    | quickly decide whether the product I want is available                                                       |
+|Logged User  | easy to follow payment procedure                                               | order quickly and start gaming                                                                               |
+|             | view the items in my bag                                                       | see what I’ve ordered and what the total cost is                                                             |
+|             | enter my payment info easily                                                   | check out quickly without problems                                                                           |
+|             | have my information stored secure                                              | rest assured my personal info is safe                                                                        |
+|             | get an order confirmation with game key after checkout                         | keep a copy for future reference/waranty                                                                     |
+|             | easily leave a review                                                          | let people know what I think about the game                                                                  |
+|             | easily login or logout                                                         | access my personal account information                                                                       |
+|             | easily recover my password in case I forgot                                    | recover access to my account                                                                                 |
+|             | receive an email confirmation after registering                                | verify that my account registration was successful                                                           |
+|             | have a personalized account page                                               | view my personal order history and order confirmations and save My payment information                       |
+|             | get a subscription to receive an email when A new newsletter becomes available | check if there are any deals on games I'd like to buy                                                        |
+| Store owner | add a product                                                                  | add new items to my store                                                                                    |
+|             | edit a product                                                                 | edit product details                                                                                         |
+|             | delete a product                                                               | delete a product                                                                                             |
+|             | add owners review                                                              | give my personal opinion on a game                                                                           |
+|             | edit owners review                                                             | change my opinion on a game                                                                                  |
+|             | delete owners review                                                           | remove my opinion on a game                                                                                  |
 |             |                                                                                |                                                                                                              |
 
 ## User Requirements and Expectations ##
@@ -131,11 +128,11 @@ I have used [Coolors](https://coolors.co/) for creating my color scheme.
 
 ![Color scheme](wireframes/color_pallet.png)
 
-FFFFFF : Mainly for text on the site as the backgrounds are dark colors.
-192839 : As main background color.
-1F143D : For navbar and footer background.
-CC0000 : Used mainly for important messages or discount icons.
-00CC00 : Main use is for most buttons on the site.
+- FFFFFF : Mainly for text on the site as the backgrounds are dark colors.
+- 192839 : As main background color.
+- 1F143D : For navbar and footer background.
+- CC0000 : Used mainly for important messages or discount icons.
+- 00CC00 : Main use is for most buttons on the site.
 
 ### Fonts ###
 
@@ -200,6 +197,11 @@ During the development, I worked with sqlite3 databases, installed with Django. 
   - Account(profile)
   - reviews
   - Wishlist
+
+- Delete:
+  - Game from wishlist
+  - Account(profile)
+  - Review
 
 ### Features to be implemented ###
 
