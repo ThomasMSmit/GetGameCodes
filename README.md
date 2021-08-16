@@ -257,11 +257,15 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 ### Source credits ###
 
+[Keis Gerhardt Smit](https://github.com/KeisGSmit)
+
 ### Image credits ###
 
 I used [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) for creating my [logo](media/logo.png)
 The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 
 ### Special thanks ###
+
+A thank you to [Keis Gerhardt Smit](https://github.com/KeisGSmit) for his Gymshop project, that helped me create my wishlist model.
 
 **Site for educational purposes only!**
