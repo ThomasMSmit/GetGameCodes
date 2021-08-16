@@ -13,6 +13,4 @@ urlpatterns = [
     path('xbox_products', views.xbox_products, name='xbox_products'),
     path('nintendo_products', views.nintendo_products, name='nintendo_products'),
     path('sale_products', views.sale_products, name='sale_products'),
-    path('wishlist', views.wishlist, name='wishlist')
 ]
-

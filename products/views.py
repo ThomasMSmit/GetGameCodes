@@ -154,7 +154,3 @@ def nintendo_products(request):
 
 def sale_products(request):
     return render(request, 'products/navbar-links/sale_products.html')
-
-
-def wishlist(request):
-    return render(request, 'products/navbar-links/wishlist.html')
