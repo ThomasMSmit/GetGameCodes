@@ -7,6 +7,7 @@ from django.db.models.functions import Lower
 from .models import Product, Category
 from .forms import ProductForm
 
+
 # Create your views here.
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -23,7 +24,7 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-            
+
             if sortkey == 'category':
                 sortkey = 'category__name'
 
@@ -42,7 +43,7 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
+
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -134,23 +135,3 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
-
-
-def pc_products(request):
-    return render(request, 'products/navbar-links/pc_products.html')
-
-
-def psn_products(request):
-    return render(request, 'products/navbar-links/psn_products.html')
-
-
-def xbox_products(request):
-    return render(request, 'products/navbar-links/xbox_products.html')
-
-
-def nintendo_products(request):
-    return render(request, 'products/navbar-links/nintendo_products.html')
-
-
-def sale_products(request):
-    return render(request, 'products/navbar-links/sale_products.html')
