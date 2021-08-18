@@ -80,7 +80,7 @@ def delete_from_wishlist(request, product_id):
         test = WishlistItem.objects.filter(product=product).exists()
 
         if test:
-            product = WishlistItem.objects.get(product=product)
+            product = WishlistItem.objects.get(product=product, wishlist_id=wishlist_user)
             product.delete()
             messages.success(request, "Product removed from wishlist")
             return redirect(redirect_url)

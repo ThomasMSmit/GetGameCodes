@@ -249,6 +249,19 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 ## Testing and Bugs ##
 
+### During development ###
+
+When trying to delete a product from a users wishlist an error occured:
+
+- Error: MultipleObjectsReturned at /wishlist/delete/2; get() returned more than one WishlistItem -- it returned 2!
+
+- Cause: The get request tries to get the product requested out of all the wishlists where the product is saved in. So when more then 1 user has the same product saved in their wishlist, this error occurs.
+
+- Solution: Added 'wishlist_id=wishlist_user' to get request, to specify out of wich wishlist the product has to be removed.
+
+
+
+
 ## Deployment ##
 
 ### Local Deployment ###
