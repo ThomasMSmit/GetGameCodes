@@ -21,11 +21,20 @@ body {
 
 .card {
     background-color: #1F143D;
+    max-width: 25rem;
 }
 
 .product-details-container {
     background-color: #1F143D;
     padding: 1rem;
+}
+
+.badge {
+    font-size: 120%;
+}
+
+.wishlist-star {
+    margin-left: 13rem;
 }
 
 /* from Bulma */
