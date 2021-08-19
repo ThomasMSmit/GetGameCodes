@@ -132,8 +132,49 @@
 
     {% block page_header %}
     {% endblock %}
+
     {% block content %}
     {% endblock %}
+    
+    <footer class="text-center text-lg-start footer">
+        <!-- Social Media -->
+        <div class="container d-flex justify-content-center py-4">
+            <a href="https://www.facebook.com" target="_blank" rel="noreferrer" aria-label="facebook">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 facebook">
+                <i class="fab fa-facebook-f"></i>
+                </button>
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noreferrer" aria-label="youtube">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 youtube" >
+                <i class="fab fa-youtube"></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noreferrer" aria-label="instagram">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 instagram" >
+                <i class="fab fa-instagram"></i>
+                </button>
+            </a>
+            <a href="https://twitter.com" rel="noreferrer" target="_blank" aria-label="twitter">
+                <button type="button" class="btn btn-primary btn-lg btn-floating mx-2 twitter">
+                <i class="fab fa-twitter"></i>
+                </button>
+            </a>
+            <hr>
+            <!-- Contact Button -->
+            <div class="col-xs-6 col-md-2.5 text-white">
+                <h5>Any Questions ?</h5>
+                <ul class="footer-links">
+                    <p>Contact us at: getgamecodes@example.com</p>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            <p class="copyright text-center">Copyright &copy; 2021 All Rights Reserved</p>
+        </div>
+    </footer>
+      
 
     {% block postloadjs %}
     <script type="text/javascript">
