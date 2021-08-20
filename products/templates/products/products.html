@@ -62,7 +62,7 @@
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
-                                    <p class="mb-0">{{ product.name }}</p>
+                                    <h4><p class="mb-0">{{ product.name }}</p></h4>
                                 </div>
                                 <div class="card-footer pt-0 border-0 text-left">
                                     <div class="row">
@@ -100,15 +100,15 @@
                                                     </div>
                         
                                                     <div>
-                                                    <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                                    <input type="submit" class="btn rounded-0 text-uppercase mt-5 bag-btn" value="Add to Bag">
                                                     
                                                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                                                 </div>
                                             </form>
-                                                    <form class="form update-form" method="POST" action="{% url 'add_to_wishlist' product.id %}">
+                                                    <form class="form update-form " method="POST" action="{% url 'add_to_wishlist' product.id %}">
                                                         {% csrf_token %}
                                                         <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                                        <button class="btn btn-black rounded-0 text-uppercase mt-5 wishlist-star"><i class="fas fa-star"></i></button>
+                                                        <button class="btn rounded-0 text-uppercase mt-5 wishlist-star" ><i class="fas fa-star"></i></button>
                                                     </form>
                                                     </div>
                                         </div>

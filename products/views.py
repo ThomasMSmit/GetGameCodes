@@ -72,7 +72,7 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id)
-    paginator = Paginator(reviews, 5)  # shows 5 reviews per page.
+    paginator = Paginator(reviews, 4)  # shows 4 reviews per page.
     page_number = request.GET.get('page')
     page_obj = paginator.get_page(page_number)
     form = ReviewForm()
