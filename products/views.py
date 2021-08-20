@@ -1,16 +1,19 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import get_object_or_404, render, redirect, reverse
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.core.paginator import Paginator
 from django.db.models import Q
 from django.db.models.functions import Lower
-
-from .models import Product, Category
+from .models import Category, Product
+from profiles.models import UserProfile
+from reviews.models import Review
+from reviews.forms import ReviewForm
 from .forms import ProductForm
 
 
-# Create your views here.
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
+
     products = Product.objects.all()
     query = None
     categories = None
@@ -24,10 +27,8 @@ def all_products(request):
             if sortkey == 'name':
                 sortkey = 'lower_name'
                 products = products.annotate(lower_name=Lower('name'))
-
             if sortkey == 'category':
                 sortkey = 'category__name'
-
             if 'direction' in request.GET:
                 direction = request.GET['direction']
                 if direction == 'desc':
@@ -38,19 +39,26 @@ def all_products(request):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = (
+                Q(name__icontains=query) | Q(description__icontains=query))
+            # i ensures the query is case insensive!
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
+    paginator = Paginator(products, 12)  # Show 12 products per page.
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
 
     context = {
-        'products': products,
+        'products': page_obj,
+        'products_num': paginator.count,
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
@@ -60,10 +68,37 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """ A view to show individual product details """
+    """ A view to show individual product details  """
+
     product = get_object_or_404(Product, pk=product_id)
+    reviews = Review.objects.filter(product=product_id)
+    paginator = Paginator(reviews, 5)  # shows 5 reviews per page.
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    form = ReviewForm()
+    if request.user.is_authenticated:
+        user = UserProfile.objects.get(user=request.user)
+    else:
+        user = None
+
+    # If user has reviewed an item
+    try:
+        # retrieve review for selected item by user
+        item_review = Review.objects.get(userid=user, product=product)
+
+        # get a prefilled form with specific review
+        edit_review_form = ReviewForm(instance=item_review)
+
+    # If there are no reviews by the user
+    except Review.DoesNotExist:
+        edit_review_form = None
+
     context = {
         'product': product,
+        'reviews': page_obj,
+        'reviews_num': paginator.count,
+        'review_form': form,
+        'edit_review_form': edit_review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
