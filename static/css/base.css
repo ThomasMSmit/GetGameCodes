@@ -20,9 +20,10 @@ body {
     position: relative;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100%;    
 }
 
+/* Social media buttons */
 .facebook {
     background: #4267B2;
 }
@@ -38,6 +39,7 @@ body {
 .twitter {
     background: #1DA1F2;
 }
+/* */
 
 .nav-links {
     background: #1F143D;
@@ -53,13 +55,50 @@ body {
     padding: 1rem;
 }
 
+.lead {
+    font-size: 2rem;
+}
+
+.bag-btn {
+    background-color: #00CC00;
+    color: #000000;
+}
+
+.wish-btn {
+    background-color:#CC0000;
+    color: #000000;
+}
+
 .badge {
     font-size: 120%;
 }
 
 .wishlist-star {
-    margin-left: 13rem;
+    background-color:#CC0000;
+    color: #000000;
+    margin-left: 1rem;
 }
+
+
+/* Review styling */
+.review-title {
+    font-family: 'inter', sans-serif;
+    color:#ffffff;
+    margin-bottom: 1.5rem;
+}
+
+.review-card {
+    background:#ffffff;
+    max-width: 25rem;
+    min-width: 25rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.review-submit {
+    background-color:#CC0000;
+}
+
 
 /* from Bulma */
 .icon {
