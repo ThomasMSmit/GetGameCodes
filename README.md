@@ -272,6 +272,8 @@ When trying to delete a product from a users wishlist an error occured:
 
 [Keis Gerhardt Smit](https://github.com/KeisGSmit)
 
+[Ken Walsh](https://github.com/kenwals)
+
 ### Image credits ###
 
 I used [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) for creating my [logo](media/logo.png)
@@ -280,5 +282,7 @@ The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 ### Special thanks ###
 
 A thank you to [Keis Gerhardt Smit](https://github.com/KeisGSmit) for his Gymshop project, that helped me create my wishlist model.
+
+A thank you to [Ken Walsh](https://github.com/kenwals) for his BoWood-Audio project, that helped me create my review model.
 
 **Site for educational purposes only!**
