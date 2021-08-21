@@ -7,7 +7,7 @@
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-outline-light btn-md my-3 review-submit" data-bs-toggle="modal"
           data-bs-target="#newReviewModal">
-          Submit a new review
+          Submit a review
         </button>
         {% endif %}
       </div>
@@ -21,8 +21,9 @@
           <div class="card-body">
             <h5 class="card-title text-capitalize"> {{ review.review_title }}</h5>
             <p class="card-text"> {{ review.review_text }} </p>
-            <p class="bowood-text-muted text-capitalize"><span>(<i class="far fa-star"></i> {{review.rating}} )</span>
-              reviewer: {{ review.userid }}</p>
+            <p class="text-capitalize"><span>Rating: ({{review.rating}} <i class="fas fa-star"></i>)</span></p>
+            <p>Review by: {{ review.userid }}</p>
+            <p>{{ review.date_added }}</p>
             {% if user.is_authenticated and user.get_username == review.userid.user.username %}
             <button class="btn btn-outline-primary btn-sm" data-bs-toggle="modal"
               data-bs-target="#editReviewModal{{review.id}}">Edit</button>
