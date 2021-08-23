@@ -71,34 +71,35 @@ def product_detail(request, product_id):
     """ A view to show individual product details  """
 
     product = get_object_or_404(Product, pk=product_id)
-    reviews = Review.objects.filter(product=product_id)
-    paginator = Paginator(reviews, 4)  # shows 4 reviews per page.
-    page_number = request.GET.get('page')
-    page_obj = paginator.get_page(page_number)
-    form = ReviewForm()
-    if request.user.is_authenticated:
-        user = UserProfile.objects.get(user=request.user)
-    else:
-        user = None
+    # reviews = Review.objects.filter(product=product_id)
+    # paginator = Paginator(reviews, 4)  # shows 4 reviews per page.
+    # page_number = request.GET.get('page')
+    # page_obj = paginator.get_page(page_number)
+    # form = ReviewForm()
 
-    # If user has reviewed an item
-    try:
-        # retrieve review for selected item by user
-        item_review = Review.objects.get(userid=user, product=product)
+    # if request.user.is_authenticated:
+    #     user = UserProfile.objects.get(user=request.user)
+    # else:
+    #     user = None
 
-        # get a prefilled form with specific review
-        edit_review_form = ReviewForm(instance=item_review)
+    # # If user has reviewed an item
+    # try:
+    #     # retrieve review for selected item by user
+    #     item_review = Review.objects.get(userid=user, product=product)
 
-    # If there are no reviews by the user
-    except Review.DoesNotExist:
-        edit_review_form = None
+    #     # get a prefilled form with specific review
+    #     edit_review_form = ReviewForm(instance=item_review)
+
+    # # If there are no reviews by the user
+    # except Review.DoesNotExist:
+    #     edit_review_form = None
 
     context = {
         'product': product,
-        'reviews': page_obj,
-        'reviews_num': paginator.count,
-        'review_form': form,
-        'edit_review_form': edit_review_form,
+        # 'reviews': page_obj,
+        # 'reviews_num': paginator.count,
+        # 'review_form': form,
+        # 'edit_review_form': edit_review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
