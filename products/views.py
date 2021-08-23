@@ -72,9 +72,9 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     reviews = Review.objects.filter(product=product_id)
-    # paginator = Paginator(reviews, 4)  # shows 4 reviews per page.
-    # page_number = request.GET.get('page')
-    # page_obj = paginator.get_page(page_number)
+    paginator = Paginator(reviews, 4)  # shows 4 reviews per page.
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
     form = ReviewForm()
 
     if request.user.is_authenticated:
@@ -97,7 +97,7 @@ def product_detail(request, product_id):
     context = {
         'product': product,
         'reviews': page_obj,
-        # 'reviews_num': paginator.count,
+        'reviews_num': paginator.count,
         'review_form': form,
         'edit_review_form': edit_review_form,
     }
