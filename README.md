@@ -205,7 +205,8 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 ### Features to be implemented ###
 
-- Giftcards (for Steam, Epic Games, Psn store etc..)
+- Giftcards (for online gamestores such as: Steam, Epic Games, Psn store. But also for physical gamestores.
+For this reason I left the adress and delivery functionality present on the site, even though it is not necessary for the current products available.)
 
 ## Technologies used ##
 
@@ -252,16 +253,19 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 ### During development ###
 
-When trying to delete a product from a users wishlist an error occured:
+**When trying to delete a product from a users wishlist an error occured:**
 
-- Error: MultipleObjectsReturned at /wishlist/delete/2; get() returned more than one WishlistItem -- it returned 2!
+- *Error:* MultipleObjectsReturned at /wishlist/delete/2; get() returned more than one WishlistItem -- it returned 2!
 
-- Cause: The get request tries to get the product requested out of all the wishlists where the product is saved in. So when more then 1 user has the same product saved in their wishlist, this error occurs.
+- *Cause:* The get request tries to get the product requested out of all the wishlists where the product is saved in. So when more then 1 user has the same product saved in their wishlist, this error occurs.
 
-- Solution: Added 'wishlist_id=wishlist_user' to get request, to specify out of wich wishlist the product has to be removed.
+- *Solution:* Added 'wishlist_id=wishlist_user' to get request, to specify out of wich wishlist the product has to be removed.
 
+**While styling footer to stay on the bottom of the page. The footer aligned right on the profile page only.**
 
+- *Cause:* Have not found the direct cause of why it is aligning right only on that page. It might have taken some styling from the content above it somehow.
 
+- *Solution:* Wrapping the block content in base.hmtl inside a empty div has resolved the issue. Most likely because this seperated the content from the footer completely, making sure the footer does not take on any styling from the content.  
 
 ## Deployment ##
 
