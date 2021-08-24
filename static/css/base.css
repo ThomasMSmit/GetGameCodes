@@ -1,27 +1,47 @@
 html {
     height: 100%;
     background-color: #192839;
+    position: relative;
 }
 
 body {
     background: #192839;
     background-size: cover;
-    height: calc(100vh - 164px);
+    position: relative;
+    height: 100%;
     color: #000000;
     font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
 }
 
 #navbar {
     background: #1F143D;
 }
 
-.footer {
-    background: #1F143D;
+#page-container {
+    min-height: 100vh;
+    overflow: hidden;
+    display: block;
     position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;    
+    padding-bottom: 18rem;
 }
+
+#footer {
+    background: #1F143D;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    align-self: center;   
+}  
+
 
 /* Social media buttons */
 .facebook {
