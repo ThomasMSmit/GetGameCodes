@@ -38,8 +38,7 @@ body {
     background: #1F143D;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    align-self: center;   
+    width: 100%;   
 }  
 
 
@@ -71,7 +70,7 @@ body {
 }
 
 .product-details-container {
-    background-color: #1F143D;
+    background: #1F143D;
     padding: 1rem;
 }
 
