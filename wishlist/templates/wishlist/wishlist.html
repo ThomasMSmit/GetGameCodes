@@ -29,7 +29,7 @@
             <div class="col">
                 {% if wishlist %}
                     <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless wishlist-product">
+                        <table class="table table-borderless">
                             <thead class="text-white">
                                 <tr>
                                     <th scope="col">Product Info</th>
@@ -39,7 +39,7 @@
                             </thead>
 
                             {% for product in products%}
-                                <tr>
+                                <tr class="wishlist-product">
                                     <td class="p-3 w-25">
                                         {% if product.image %}
                                         <img class="img-fluid rounded" src="{{ product.image.url }}">
