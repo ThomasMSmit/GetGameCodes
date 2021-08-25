@@ -273,13 +273,17 @@ For this reason I left the adress and delivery functionality present on the site
 
 ## Credit ##
 
+### Content credits ###
+
+**All content, games titles, trade names and/or trade dress, trademarks, artwork and associated imagery are trademarks and/or copyright material of their respective owners. All rights reserved.**
+
+[Thegamesdb](https://thegamesdb.net/) for game titles and descriptions.
+
 ### Source credits ###
 
 [Keis Gerhardt Smit](https://github.com/KeisGSmit) for the wishlist.
 
 [Ken Walsh](https://github.com/kenwals) for the review model.
-
-[Cdkey](https://www.cdkeys.com) for the game titles and descriptions.
 
 ### Image credits ###
 
