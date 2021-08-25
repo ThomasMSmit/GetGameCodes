@@ -247,7 +247,7 @@ For this reason I left the adress and delivery functionality present on the site
 - [Tinypng](https://tinypng.com/)
 - [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab)
 - [Responsively.app](https://responsively.app/)
-- [For generating a table of content:](http://ecotrust-canada.github.io/markdown-toc/)
+- [Table of content](http://ecotrust-canada.github.io/markdown-toc/)
 
 ## Testing and Bugs ##
 
@@ -275,14 +275,18 @@ For this reason I left the adress and delivery functionality present on the site
 
 ### Source credits ###
 
-[Keis Gerhardt Smit](https://github.com/KeisGSmit)
+[Keis Gerhardt Smit](https://github.com/KeisGSmit) for the wishlist.
 
-[Ken Walsh](https://github.com/kenwals)
+[Ken Walsh](https://github.com/kenwals) for the review model.
+
+[Cdkey](https://www.cdkeys.com) for the game titles and descriptions.
 
 ### Image credits ###
 
 I used [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) for creating my [logo](media/logo.png)
 The icon used in the logo is from [flaticon](https://www.flaticon.com/)
+
+
 
 ### Special thanks ###
 
