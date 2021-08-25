@@ -26,6 +26,15 @@ body {
     background: #1F143D;
 }
 
+.nav-links {
+    background: #1F143D;
+}
+
+.navbar-toggler {
+    background: #ffffff;
+    margin-bottom: 0.2rem; 
+}
+
 #page-container {
     min-height: 100vh;
     overflow: hidden;
@@ -60,13 +69,16 @@ body {
 }
 /* */
 
-.nav-links {
-    background: #1F143D;
-}
-
 .card {
     background-color: #1F143D;
     max-width: 25rem;
+}
+
+#card-image {
+    height: 25rem;
+    width: 100%;
+    object-fit: scale-down;
+    margin-top: 1rem;
 }
 
 .product-details-container {
@@ -139,7 +151,7 @@ body {
 
 .btn-outline-black {
     background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
+    color: black !important; 
     border: 1px solid black;
 }
 
