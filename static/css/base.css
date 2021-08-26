@@ -64,8 +64,6 @@ body {
     color: #007bff;
 }
 
-
-
 /* */
 
 /* Styling for / related to footer  */
@@ -225,7 +223,6 @@ body {
 
 /* */
 
-
 /* Review styling */
 
 .review-title {
@@ -330,6 +327,8 @@ a.category-badge > span.badge:hover {
 input[name='q']::placeholder {
     color: #aab7c4;
 }
+
+/* */
 
 /* ------------------------------- bootstrap toasts */
 
