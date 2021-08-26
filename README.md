@@ -279,18 +279,34 @@ For this reason I left the adress and delivery functionality present on the site
 
 [Thegamesdb](https://thegamesdb.net/) for game titles and descriptions.
 
+[PcGamer](https://www.pcgamer.com/playing-god-of-war-on-ps-now-made-me-rage-harder-than-kratos/) for the God Of War article on the homepage.
+
+[GamerRadar](https://www.gamesradar.com/uk/assassins-creed-valhalla-gets-free-ezio-outfit-for-eivor/) for Assassin's Creed Valhalla article on the homepage.
+
+[ScreenRant](https://screenrant.com/super-smash-bros-ultimate-best-characters-to-play/) for the Super Smash Bros. Ultimate article on the homepage.
+
+[RacingGames](https://racinggames.gg/f1/f1-2021-release-date-gameplay-trailer-early-access-my-team-tracks-editions-price-uk-ps5-xbox-pc-steam/) for the F1 2021 article on the homepage.
+
 ### Source credits ###
 
 [Keis Gerhardt Smit](https://github.com/KeisGSmit) for the wishlist.
 
 [Ken Walsh](https://github.com/kenwals) for the review model.
 
+[Bootdey](https://www.bootdey.com/snippets/view/latest-news-widget) for the latest news layout.
+
 ### Image credits ###
 
 I used [Paint 3D](https://www.microsoft.com/en-us/p/paint-3d/9nblggh5fv99?activetab=pivot:overviewtab) for creating my [logo](media/logo.png)
 The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 
+[PcGamer](https://www.pcgamer.com/playing-god-of-war-on-ps-now-made-me-rage-harder-than-kratos/) Article image
 
+[GamerRadar](https://www.gamesradar.com/uk/assassins-creed-valhalla-gets-free-ezio-outfit-for-eivor/) Article image
+
+[ScreenRant](https://screenrant.com/super-smash-bros-ultimate-best-characters-to-play/) Article image
+
+[RacingGames](https://racinggames.gg/f1/f1-2021-release-date-gameplay-trailer-early-access-my-team-tracks-editions-price-uk-ps5-xbox-pc-steam/) Article image
 
 ### Special thanks ###
 
