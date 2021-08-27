@@ -479,6 +479,10 @@ input[name='q']::placeholder {
     #bag-account-icons {
         top: 0;
     }
+
+    .logo-img {
+        margin: auto;
+    }
 }
 
 @media (min-width: 768px) {
