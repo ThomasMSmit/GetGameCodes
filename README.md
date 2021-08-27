@@ -602,6 +602,8 @@ The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 
 ### Special thanks ###
 
+A BIG thank you to [Aukje van der Wal](https://github.com/byIlsa) for helping me with the things i wasn't able to figure out on my own.
+
 A thank you to [Keis Gerhardt Smit](https://github.com/KeisGSmit) for his Gymshop project, that helped me create my wishlist model.
 
 A thank you to [Ken Walsh](https://github.com/kenwals) for his BoWood-Audio project, that helped me create my review model.
