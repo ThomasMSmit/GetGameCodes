@@ -26,13 +26,18 @@ body {
 
 #navbar-top {
     background: #1F143D;
-    padding-top: 2rem;
+}
+
+.logo-img {
+    width: 10rem;
+    height: 7.5rem;
+    overflow: hidden;
+    margin-left: 2rem;
 }
 
 .nav-links {
     background: #1F143D;
-    padding-top: 2rem;
-    padding-bottom: 1rem;    
+    padding-bottom: 0.5rem;    
 }
 
 .navbar-toggler {
@@ -44,10 +49,16 @@ body {
 #bag-account-icons {
     position: absolute;
     right: 1.5rem;
-    top: 0;
+    margin-bottom: 1.4rem;
 }
 
-.account-bag-nav {
+.account-nav {
+    color: #ffffff;
+    display: block;
+    padding: .5rem 1rem;
+}
+
+.bag-nav {
     color: #ffffff;
     display: block;
     padding: .5rem 1rem;
@@ -252,10 +263,6 @@ body {
     justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
-}
-
-.logo-font {
-    font-family: 'Inter', sans-serif;
 }
 
 .main-logo-link {
@@ -463,6 +470,14 @@ input[name='q']::placeholder {
 
     body {
         height: calc(100vh - 116px);
+    }
+
+    #navbar-top {
+        padding-bottom: 1rem;
+    }
+
+    #bag-account-icons {
+        top: 0;
     }
 }
 
