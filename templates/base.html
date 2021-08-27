@@ -10,6 +10,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     {% endblock %}
 
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ MEDIA_URL }}favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ MEDIA_URL }}favicon/favicon-16x16.png">
+        <link rel="manifest" href="{{ MEDIA_URL }}favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+
     {% block extra_meta %}
     {% endblock %}
 
@@ -43,9 +50,11 @@
         <div id="page-container">
             <header class="container-fluid fixed-top">
                 <div id="navbar-top" class="row">
-                    <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
-                        <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                            <h2 class="logo-font text-white my-0 ml-3"><strong>GetGameCodes</strong></h2>
+                    <div class="col-12 col-lg-4">
+                        <a class="navbar-brand" href="{% url 'home' %}">
+                            <div class="logo-img">
+                                    <img src="{{ MEDIA_URL }}logo/logo.png" class="img-fluid">
+                            </div>
                         </a>
                     </div>
 
