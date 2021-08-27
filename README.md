@@ -61,14 +61,13 @@ An easy to navigate and responsive website that is fun to use and allows users a
 
 ### View for a guest user ###
 
-A user that is not logged in and/or registered, will see a homepage with a list of multiple games that they can buy. Starting with the highest ranked game avalible.
-The user will be given the option to create an account on every page, where they can view their purchase history and gives them the option to leave reviews on games they have bought.
+A user that is not logged in and/or registered, will see a homepage with a list of multiple games that they can buy.
+The user will be given the option to create an account on every page, where they can view their purchase history and gives them the option to leave reviews on games.
 
 ### View for logged in user ###
 
 A logged in user will benefit from the full functionality of the site. The navigation bar will contain an extra button called: 'Logout' when they are logged into their account.
-This user is now able to leave reviews on games they have purchased and register themselfs for the site blog where gamers share there full experiences with their favorite game.
-In the profile tab they can see and change their personal information and view their purchase history.
+This user is now able to leave reviews on games and add games they want to buy to their wishlist. In the profile tab they can see and change their personal information and view their purchase history.
 
 ### User Stories ###
 
@@ -76,30 +75,34 @@ This file is not complete. Changes might be made during development, depending o
 
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
-| User        | easily navigate the site on mobile, Desktop and tablet                         | quickly look if the game I am looking for is on the site                                                     |
+| User        | easily navigate the site on mobile, desktop and tablet                         | quickly look if the game I am looking for is on the site                                                     |
 |             | view a list of games to buy                                                    | choose something to buy                                                                                      |
 |             | read blog posts                                                                | get informed about games I’m planning to buy                                                                 |
 |             | easily register for an account                                                 | have a personal account                                                                                      |
 |             | sort the list of games                                                         | see best rates, best prices and search product by category                                                   |
 |             | sort for specific game category or platform                                    | find best-priced or best-rated product in a specific category                                                |
 |             | easily see what I’ve searched for and the Number of results                    | quickly decide whether the product I want is available                                                       |
-|Logged User  | easy to follow payment procedure                                               | order quickly and start gaming                                                                               |
-|             | view the items in my bag                                                       | see what I’ve ordered and what the total cost is                                                             |
+|             | view the items in my bag                                                       | see what I want to order and what the total cost is                                                          |
 |             | enter my payment info easily                                                   | check out quickly without problems                                                                           |
+|             | easy to follow payment procedure                                               | order quickly and start gaming                                                                               |
+|Logged User  |                                                                                |                                                                                                              |
 |             | have my information stored secure                                              | rest assured my personal info is safe                                                                        |
-|             | get an order confirmation with game key after checkout                         | keep a copy for future reference/waranty                                                                     |
+|             | get an order confirmation after checkout                                       | keep a copy for future reference/waranty                                                                     |
 |             | easily leave a review                                                          | let people know what I think about the game                                                                  |
 |             | easily login or logout                                                         | access my personal account information                                                                       |
 |             | easily recover my password in case I forgot                                    | recover access to my account                                                                                 |
 |             | receive an email confirmation after registering                                | verify that my account registration was successful                                                           |
-|             | have a personalized account page                                               | view my personal order history and order confirmations and save My payment information                       |
-|             | get a subscription to receive an email when A new newsletter becomes available | check if there are any deals on games I'd like to buy                                                        |
-| Store owner | add a product                                                                  | add new items to my store                                                                                    |
+|             | have a personalized account page                                               | view my personal order history and order confirmations and save My information                               |
+|             | add review                                                                     | give my personal opinion on a game                                                                           |
+|             | edit own review                                                                | change my opinion on a game                                                                                  |
+|             | delete own review                                                              | remove my opinion on a game                                                                                  |
+|Store owner  |                                                                                |                                                                                                              |
+|             | add a product                                                                  | add new items to my store                                                                                    |
 |             | edit a product                                                                 | edit product details                                                                                         |
 |             | delete a product                                                               | delete a product                                                                                             |
-|             | add owners review                                                              | give my personal opinion on a game                                                                           |
-|             | edit owners review                                                             | change my opinion on a game                                                                                  |
-|             | delete owners review                                                           | remove my opinion on a game                                                                                  |
+|             | add review                                                                     | give my personal opinion on a game                                                                           |
+|             | edit review                                                                    | change my opinion on a game                                                                                  |
+|             | delete review                                                                  | remove my opinion on a game                                                                                  |
 |             |                                                                                |                                                                                                              |
 
 ## User Requirements and Expectations ##
@@ -150,7 +153,7 @@ Icon used in logo is from [flaticon](https://www.flaticon.com/)
 
 ### Structure ###
 
-For the structure I have used [Bootstrap.](https://getbootstrap.com/)
+For the structure I have used [Bootstrap](https://getbootstrap.com/)
 
 ## Wireframes and Data Models ##
 
@@ -176,17 +179,16 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 - Registration functionality
 - Log In and Out functionality
-- Able to leave reviews on purchased games
-- Sign Up for newsletter (MailChimp)
+- Able to leave reviews on games when logged in
+- Able to add games to wishlist
 - Contact site owner
 - Having a profile page
-- Able to add games to wishlist
 
 - CRUD Functions:
 - Create:
   - Account (profile)
-  - Add review to game
-  - Create wishlist
+  - Review for games
+  - Wishlist
 
 - Read:
   - Account (profile)
@@ -195,18 +197,36 @@ During the development, I worked with sqlite3 databases, installed with Django. 
 
 - Update:
   - Account(profile)
-  - reviews
+  - Own reviews on games
   - Wishlist
 
 - Delete:
-  - Game from wishlist
+  - Games from wishlist
   - Account(profile)
-  - Review
+  - Own reviews on games
 
 ### Features to be implemented ###
 
-- Giftcards (for online gamestores such as: Steam, Epic Games, Psn store. But also for physical gamestores.
-For this reason I left the adress and delivery functionality present on the site, even though it is not necessary for the current products available.)
+**Giftcards:**
+
+- For online gamestores such as: Steam, Epic Games, Psn store. But also for physical gamestores.
+For this reason I left the adress and delivery functionality present on the site, even though it is not necessary for the current products available.
+
+**Collector items:**
+
+- Items such as collector editions of games with character statues. This is also a reason why the adress and delivery functionality is still present on the site.
+
+**Game Merch:**
+
+- Selling game merchandise such as t-shirts, hoodies and posters. This as well is a reason why the adress and delivery functionality is still present on the site.
+
+**Ability to change username and delete account completely:**
+
+- I wasn't able to add this feature to the current site due to time constrains. But would like to in the future.
+
+**Newsletter with game news:**
+
+- I wasn't able to add this feature to the current site due to time constrains. But would like to in the future.
 
 ## Technologies used ##
 
@@ -269,7 +289,181 @@ For this reason I left the adress and delivery functionality present on the site
 
 ## Deployment ##
 
+GetGameCodes was developed using the GitPod online IDE and using Git & GitHub for version control.
+It is hosted on the **Heroku** platform, with static files and images being hosted in **AWS S3 Basket**.
+
 ### Local Deployment ###
+
+To be able to run this project, the following tools have to be installed:
+
+- An IDE of your choice (I used GitPod for creating this project)
+- Git
+- PIP
+- Python3
+
+Apart from that, you also need to create accounts with the following services:
+
+- [Stripe](stripe.com/)
+- [AWS](aws.amazon.com/) to setup the S3 bucket
+- [Gmail](http://mail.google.com/mail?hl=nl)
+
+To **clone** the project:
+
+- You can **clone** this repository directly into the editor of your choice by pasting the following command into the terminal:
+
+``` git clone https://github.com/ThomasMSmit/GetGameCodes ```
+
+Alternatively, you can **save** a copy of this repository by clicking the green button **Clone** or **download** , then **Download Zip** button, and after extract the Zip file to your folder.
+
+In the terminal window of your local IDE change the directory (CD) to the correct file location (directory that you have just created).
+
+Note: You can read more information about the cloning process on the [GitHub Help page](https://docs.github.com/en).
+
+- Set up environment variables.
+
+Note, that this process will be different depending on IDE you use.
+
+In this IDE it was done using the following steps:
+
+``` pip install python-dotenv ```
+
+- Add .env to the .gitignore file in your project's root directory
+- In .env file set environment variables with the following syntax:
+
+| KEY                   | VALUE       |
+|-----------------------|-------------|
+| DEVELOPMENT           | development |
+| SECRET_KEY            | secret key  |
+| STRIPE_PUBLIC_KEY     | secret key  |
+| STRIPE_SECRET_KEY     | secret key  |
+| STRIPE_SECRET_KEY     | secret key  |
+| EMAIL_HOST_USER       | secret      |
+| EMAIL_HOST_PASSWORD   | secret      |
+| DATABASE_URL          | url         |
+| AWS_ACCESS_KEY_ID     | secret key  |
+| AWS_SECRET_ACCESS_KEY | secret key  |
+| AWS_S3_CUSTOM_DOMAIN  | url         |
+
+- Add the following to your **settings.py**
+
+```from dotenv import load_dotenv```
+```load_dotenv()```
+
+- Read more about how to **set up** the Stripe keys in the [Stripe Documentation](https://stripe.com/docs/keys).
+
+Call your variables either with ```os.getenv()``` or ```os.environ.get()```
+In settings.py:
+
+| import OS  |                                |
+|------------|--------------------------------|
+| SECRET_KEY | = os.environ.get("SECRET_KEY") |
+| DEBUG      | = "DEVELOPMENT" in os.environ  |
+
+Note that **DEBUG** will be **True** if there's a **DEVELOPMENT key/value pair** in your .env file, regardless of
+its value (i.e. if it has any value it will be True).
+This means that **DEBUG** will be **False** in production, unless the **DEVELOPMENT** variable is added to the
+production host's environment variables.
+Don't forget to add .env to your .gitignore and **never track it with version control**!
+
+- Install all requirements from the requirements.txt file putting this command into your terminal:
+
+``` pip3 install -r requirements.txt ```
+
+- In the terminal in your IDE migrate the models to crete a database using the following commands:
+
+``` python3 manage.py makemigrations ```
+
+``` python3 manage.py migrate ```
+
+- Create a Procfile, in order to tell Heroku how to run the project, using the following command in the terminal:
+
+```web: gunicorn getgamecodes.wsgi:application```
+
+- git add, git commit and git push these files to GitHub repository.
+
+**NOTE:** these 1-3 steps are already done in this project and included in the **GitHub repository**, but illustrated here as they are required for the **successful** deployment to **Heroku**.
+As well as that, other things that are required for the Heroku deployment and have to be installed: **gunicorn (WSGI HTTP Server)**, **dj-database-url** for database connection and **Psycopg** (PostgreSQL driver for Python).
+All of the mentioned above are already installed in this project in the requirements.txt file.
+
+- On the [Heroku](heroku.com/) website you need to create a **new app**, assign a name (must be unique),set a region to the **closest** to you (for my project I set Europe) and click **Create app**.
+- Go to Resources tab in **Heroku**, then in the **Add-ons search bar** look for **Heroku Postgres**(you can type postgres), select **Hobby Dev — Free** and click **Provision** button to add it to your project.
+- In **Heroku Settings** click on **Reveal Config Vars**.
+- Set the following config variables there:
+
+| KEY                  | Value    |
+| :-------------       | :---------- |
+|AWS_ACCESS_KEY_ID     | your aws access key  |
+|AWS_SECRET_ACCESS_KEY | your aws secret access key |
+|DATABASE_URL          |  your postgres database url|
+|EMAIL_HOST_PASS       |  your email password(generated by Gmail)|
+|EMAIL_HOST_USER       |  your email address|
+|SECRET_KEY            |  your secret key|
+|STRIPE_PUBLIC_KEY     |  your stripe public key|
+|STRIPE_SECRET_KEY     |  your stripe secret key|
+|STRIPE_WH_SECRET      |  your stripe wh key|
+|USE_AWS               |  True|
+
+- Copy **DATABASE_URL's** value(Postgres database URL) from the **Convig Vars** and **temporary** paste it into the default database in settings.py.
+
+You can temporary comment out the current database settings code and just paste the following in the settings.py:
+
+```python
+  DATABASES = {
+    'default': dj_database_url.parse("your Postgres database URL here")
+  }
+  ```
+
+Important Note:
+
+That's just **temporary set up**, this URL should **not be committed** and published to GitHub for **security reasons**, so make sure **not to commit your changes to Git while the URL is in the settings.py**.
+
+- Migrate the **database models** to the **Postgres database** using the following commands in the terminal:
+
+``` python3 manage.py makemigrations ```
+
+``` python3 manage.py migrate ```
+
+- Load the **data fixtures in this specific order**, because one relies on the other (categories, workshops, therapists, comments, blog) into the **Postgres database** using the following command:
+
+``` python3 manage.py loaddata <fixture_name> ```
+
+- Create a **superuser** for the Postgres database by running the following command (you need to follow the instructions and inserting username, email and password):
+
+``` python3 manage.py createsuperuser ```
+
+- You need to **remove** your Postgres URL database from the settings and **uncomment** the default DATABASE settings code in the settings.py file.
+
+Note: for production you get the environment variable 'DATABASE_URL' from the Heroku Config Vars and use Postgress database, while for development you use the SQLite as a default database.
+
+- Add your **Heroku app URL** to **ALLOWED_HOSTS** in the settings.py file.
+
+- You can connect **Heroku** to **GitHub** to automatically deploy each time you **push** to GitHub. But be **aware** that if you use **AWS** to host your static and media files, automatic deployment **may result** in being **billed** if you are on a free account.
+
+To do so, from the [Heroku dashboard](https://dashboard.heroku.com/) follow the steps:
+
+- Deploy section -> Deployment method -> select GitHub
+- Link the **Heroku app** to **your GitHub repository** for this project
+- Click **Enable Automatic Deploys** in the **Automatic Deployment section**
+- Run **git push** command in the terminal, that would now **push your code to both Github and Heroku**, and perform the **deployment**.
+
+Alternatively, in the terminal you can run:
+
+``` heroku login -i ```
+
+- After adding and committing to Git, run the following command:
+
+``` git push heroku main ```
+
+- After successful deployment, you can view your app by clicking **Open App** on Heroku platform.
+- You will also need to **verify your email address**, so you need to **login** with your **superuser credentials** and **verify your email address** in the admin panel. Now you will be able to **view the app** running!
+
+Hosting media files with AWS
+
+The static files and media files (that will be uploaded by superuser - product/service images) are hosted in the AWS S3 Bucket. To host them, you need to create an account in AWS and create your S3 bucket with public access. More about setting it up you can read in [Amazon S3 documentation](https://docs.aws.amazon.com/s3/index.html) and [this](https://www.youtube.com/watch?v=e6w9LwZJFIA) tutorial.
+
+Sending email via Gmail
+
+In order to **send** real emails from the application, you need to **connect** it to your Gmail account, setting up your email address in ```EMAIL_HOST_USER``` variable and your **app password** generated by your email provider in ```EMAIL_HOST_PASS``` variable.
 
 ## Credit ##
 
