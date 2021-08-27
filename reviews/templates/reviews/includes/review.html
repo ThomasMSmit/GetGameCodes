@@ -20,7 +20,7 @@
         <div class="review-card">
           <div class="card-body">
             <h5 class="card-title text-capitalize"> {{ review.review_title }}</h5>
-            <p class="card-text"> {{ review.review_text }} </p>
+            <p class="card-text"> {{ review.review_text|linebreaks }} </p>
             <p class="text-capitalize"><span>Rating: ({{review.rating}} <i class="fas fa-star"></i>)</span></p>
             <p>Review by: {{ review.userid }}</p>
             <p>{{ review.date_added }}</p>
