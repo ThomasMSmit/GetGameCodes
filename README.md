@@ -76,11 +76,10 @@ This file is not complete. Changes might be made during development, depending o
 | as a/an…    | I want to be able to…                                                          | So that I can…                                                                                               |
 |-------------|--------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
 | User        | easily navigate the site on mobile, desktop and tablet                         | quickly look if the game I am looking for is on the site                                                     |
-|             | view a list of games to buy                                                    | choose something to buy                                                                                      |
-|             | read blog posts                                                                | get informed about games I’m planning to buy                                                                 |
+|             | view a list of all games to buy                                                | choose something to buy                                                                                      |
 |             | easily register for an account                                                 | have a personal account                                                                                      |
 |             | sort the list of games                                                         | see best rates, best prices and search product by category                                                   |
-|             | sort for specific game category or platform                                    | find best-priced or best-rated product in a specific category                                                |
+|             | sort for specific game category                                                | find best-priced or best-rated product in a specific category                                                |
 |             | easily see what I’ve searched for and the Number of results                    | quickly decide whether the product I want is available                                                       |
 |             | view the items in my bag                                                       | see what I want to order and what the total cost is                                                          |
 |             | enter my payment info easily                                                   | check out quickly without problems                                                                           |
@@ -88,7 +87,7 @@ This file is not complete. Changes might be made during development, depending o
 |Logged User  |                                                                                |                                                                                                              |
 |             | have my information stored secure                                              | rest assured my personal info is safe                                                                        |
 |             | get an order confirmation after checkout                                       | keep a copy for future reference/waranty                                                                     |
-|             | easily leave a review                                                          | let people know what I think about the game                                                                  |
+|             | easily add a product to my wishlist                                            | save games I might want to buy                                                                              |
 |             | easily login or logout                                                         | access my personal account information                                                                       |
 |             | easily recover my password in case I forgot                                    | recover access to my account                                                                                 |
 |             | receive an email confirmation after registering                                | verify that my account registration was successful                                                           |
@@ -369,21 +368,7 @@ For this reason I left the adress and delivery functionality present on the site
 
 ## Testing and Bugs ##
 
-### During development ###
-
-**When trying to delete a product from a users wishlist an error occured:**
-
-- *Error:* MultipleObjectsReturned at /wishlist/delete/2; get() returned more than one WishlistItem -- it returned 2!
-
-- *Cause:* The get request tries to get the product requested out of all the wishlists where the product is saved in. So when more then 1 user has the same product saved in their wishlist, this error occurs.
-
-- *Solution:* Added 'wishlist_id=wishlist_user' to get request, to specify out of wich wishlist the product has to be removed.
-
-**While styling footer to stay on the bottom of the page. The footer aligned right on the profile page only.**
-
-- *Cause:* Have not found the direct cause of why it is aligning right only on that page. It might have taken some styling from the content above it somehow.
-
-- *Solution:* Wrapping the block content in base.hmtl inside a empty div has resolved the issue. Most likely because this seperated the content from the footer completely, making sure the footer does not take on any styling from the content.  
+Testing and Bug information can be found in [Testing.md]()
 
 ## Deployment ##
 
