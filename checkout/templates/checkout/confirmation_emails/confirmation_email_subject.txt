@@ -1,1 +1,1 @@
-GetGameCodes Confirmation for Order Number {{ order.order_number }}
+GetGameCodes Confirmation email for Order Number {{ order.order_number }}
