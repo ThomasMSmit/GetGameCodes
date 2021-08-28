@@ -60,6 +60,18 @@
 
                     {% for item in order.lineitems.all %}
                     <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 font-weight-bold">Product Name:</p>
+                        </div>
+                        <div class="col-12 col-md-8 text-md-right">
+                            <p class="mb-0">{{ item.product.name }}</p>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <p class="mb-0 font-weight-bold">Quantity:</p>
+                        </div>
                         <div class="col-12 col-md-8 text-md-right">
                             <p class="small mb-0">{{ item.quantity }} @ €{{ item.product.price }} each</p>
                         </div>
@@ -170,7 +182,8 @@
                             <p class="mb-0 font-weight-bold">Delivery</p>
                         </div>
                         <div class="col-12 col-md-8 text-md-right">
-                            <p class="mb-0">No delivery cost for digital products</p>
+                            <p class="mb-0">€{{ order.delivery_cost }}</p>
+                            <p class="mb-0 text-muted">No delivery cost for digital products</p>
                         </div>
                     </div>
 
