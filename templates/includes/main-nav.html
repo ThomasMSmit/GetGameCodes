@@ -6,6 +6,7 @@
                 <p class="my-0">My Account</p>
             </div>
         </a>
+
         <div class="dropdown-menu border-0" aria-labelledby="user-options">
             {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
@@ -44,11 +45,13 @@
                 HOME
             </a>
         </li>
+
         <li class="nav-item">
             <a class="logo-font font-weight-bold product-nav" href="{% url 'products' %}" id="all_products-link" aria-haspopup="true" aria-expanded="false">
                 ALL PRODUCTS
             </a>
         </li>
+        
         <li class="nav-item">
             <a class="logo-font font-weight-bold product-nav" href="{% url 'products' %}?category=PC" id="pc-link" aria-haspopup="true" aria-expanded="false">
                 PC
