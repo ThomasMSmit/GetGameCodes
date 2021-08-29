@@ -113,8 +113,8 @@ body {
     color: #ffffff;
     position: absolute;
     width: 100%;
-    right: 0;
-    bottom: 0;
+    right: 0rem;
+    bottom: 0rem;
 }
 
 .media.media-news .media-img img {
