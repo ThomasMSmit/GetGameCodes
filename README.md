@@ -359,6 +359,7 @@ For this reason I left the adress and delivery functionality present on the site
 - [Balsamiq](https://balsamiq.com/)
 - [W3C HTML Validation Service](https://validator.w3.org/)
 - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/)
+- [JSHint](https://jshint.com/)
 - [Heroku Postgres](https://elements.heroku.com/addons/heroku-postgresql)
 - [Gimp](https://www.gimp.org/)
 - [Tinypng](https://tinypng.com/)

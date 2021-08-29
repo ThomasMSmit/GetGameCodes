@@ -199,18 +199,19 @@ Page when SuperUser (CRUD)
 ### HTML ###
 
 All the HTML files were validated by using online code validator W3C HTML Validation Service. Errors were found about: img element missing alt, p element not allowed as child of h4 element, duplicate id, open elements.
+All mentioned errors have been resolved. There is an error regarding hr elements: 'Error: The color attribute on the hr element is obsolete.  Use CSS instead.' but I am not able to get the hr element to take the color that I want using CSS.
 
 ### CSS ###
 
-
+All the CSS files were validated by using an online code validator W3C CSS Validation Service. There were 2 errors and several warnings found. Errors found are 'Value Error : right only 0 can be a unit. You must put a unit after your number : 0.1' 'Property backdrop-filter doesn't exist : blur(10px)' Also, there are warnings about -WebKit- as validator is catching it as 'an unknown vendor extension'.
 
 ### JavaScript ###
 
-
+All the JavaScript files were validated by using an online code validator JSHint.com. A missing semicolon was added to resolve an error. jshint esversion: 6 was added at the top of the Javascript files to resolve 2 errors. 2 warnings about undefined variables can be ignored. Own code is syntactically valid.
 
 ### Python ###
 
-
+All Python files were validated by using an online code validator Pep8. File changes were made to make the code PEP8 compliant where possible.
 
 ## Debug = True ##
 
@@ -218,7 +219,13 @@ While developing an app, the local debugger: debug=True was on. Every time when 
 
 ## Compatibility and Responsiveness ##
 
+This website had been being tested during the development in Microsoft Edge. using Web Development Tools.
 
+Mostly I've used Web Inspector and Responsive Design Mode to preview different webpages across various screen sizes, orientations, and resolutions, as well as custom viewports and user agents.
+
+It has also been tested on different browsers.
+
+I have used a responsiveness test app [responsively.app](https://responsively.app/) to test responsiveness further then just with the Development Tools.
 
 ## Bugs ##
 
@@ -237,3 +244,21 @@ While developing an app, the local debugger: debug=True was on. Every time when 
 - *Cause:* Have not found the direct cause of why it is aligning right only on that page. It might have taken some styling from the content above it somehow.
 
 - *Solution:* Wrapping the block content in base.hmtl inside a empty div has resolved the issue. Most likely because this seperated the content from the footer completely, making sure the footer does not take on any styling from the content.  
+
+**Not able to find the column for first and last name in the user information.**
+
+- *Cause:* I have not found what the direct cause of the issue was. The most likely cause is that something went wrong with migrating, but after reapplying migrations the error was not fixed.
+
+- *Solution:* Seeing as I did not need these columns per se, I removed the first and last name colums from their respective models.
+
+**Automatic emails were not being send after checkout or as email verification for a new user.**
+
+- *Cause:* In the heroku config variables of my app, Deployment was set to 0 but was still in enviroment. So emails were send to local enviroment.
+
+- *Solution:* Removing Development from the confic variables completely solved the issue.
+
+**Error being shown when trying to open product details.**
+
+- *Cause:* The column for the reviews was not found as i did not add them to the postgres database.
+
+- *Solution:* Making new fixtures after adding the reviews in the Django admin and loading them to postgres resolved the issue.
