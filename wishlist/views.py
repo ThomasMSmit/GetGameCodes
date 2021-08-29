@@ -1,4 +1,6 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse, get_list_or_404, get_object_or_404
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_list_or_404,
+    get_object_or_404)
 
 from .models import Product, UserProfile, Wishlist, WishlistItem
 
@@ -49,13 +51,15 @@ def add_to_wishlist(request, product_id):
 
     product = Product.objects.get(pk=product_id)
     if request.POST:
-        test = WishlistItem.objects.filter(wishlist=wishlist_user, product=product).exists()
+        test = WishlistItem.objects.filter(wishlist=wishlist_user,
+                                           product=product).exists()
         if test:
             messages.error(request, "Product already in your wishlist")
             return redirect(redirect_url)
 
         else:
-            added_item = WishlistItem(wishlist=wishlist_user, product=product, date_added=timezone.now())
+            added_item = WishlistItem(wishlist=wishlist_user, product=product,
+                                      date_added=timezone.now())
             added_item.save()
             messages.success(request, "Product added to your wishlist")
             return redirect(redirect_url)
@@ -76,11 +80,12 @@ def delete_from_wishlist(request, product_id):
     if request.POST:
         product = Product.objects.get(pk=product_id)
 
-        # look for product in the user's wishlistItem - returns true if it exists
+        # look for product in the user's wishlistItem
         test = WishlistItem.objects.filter(product=product).exists()
 
         if test:
-            product = WishlistItem.objects.get(product=product, wishlist_id=wishlist_user)
+            product = WishlistItem.objects.get(product=product,
+                                               wishlist_id=wishlist_user)
             product.delete()
             messages.success(request, "Product removed from wishlist")
             return redirect(redirect_url)
@@ -103,7 +108,8 @@ def add_to_bag(request, item_id):
 
     if item_id in list(bag.keys()):
         bag[item_id] += quantity
-        messages.success(request, f'Updated {product.name} quantity to {bag[item_id]}')
+        messages.success(request,
+                         f'Updated {product.name} quantity to {bag[item_id]}')
     else:
         bag[item_id] = quantity
         messages.success(request, f'Added {product.name} to your bag')
