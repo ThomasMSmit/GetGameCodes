@@ -91,7 +91,8 @@ def delete_from_wishlist(request, product_id):
             return redirect(redirect_url)
 
         if test is None:
-            messages.error(request, "You can not delete a item that is not in your wishlist")
+            messages.error(request,
+                           "You can not delete a item that is not in your wishlist")
             return redirect(redirect_url)
     else:
         messages.error(request, 'Item can only be deleted from your wishlist')
