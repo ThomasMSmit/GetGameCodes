@@ -368,7 +368,7 @@ For this reason I left the adress and delivery functionality present on the site
 
 ## Testing and Bugs ##
 
-Testing and Bug information can be found in [Testing.md]()
+Testing and Bug information can be found in [Testing.md](https://github.com/ThomasMSmit/GetGameCodes/blob/main/TESTING.md)
 
 ## Deployment ##
 
