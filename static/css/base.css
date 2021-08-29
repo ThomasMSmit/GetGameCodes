@@ -186,7 +186,7 @@ body {
     max-height: fit-content;
 }
 
-#card-image {
+.card-image {
     height: 25rem;
     width: 100%;
     object-fit: scale-down;

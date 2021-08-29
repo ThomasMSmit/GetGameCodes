@@ -198,7 +198,7 @@ Page when SuperUser (CRUD)
 
 ### HTML ###
 
-
+All the HTML files were validated by using online code validator W3C HTML Validation Service. Errors were found about: img element missing alt, p element not allowed as child of h4 element, duplicate id, open elements.
 
 ### CSS ###
 
