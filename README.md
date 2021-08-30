@@ -325,6 +325,10 @@ For this reason I left the adress and delivery functionality present on the site
 
 - I wasn't able to add this feature to the current site due to time constrains. But would like to in the future.
 
+**Discount functionality:**
+
+- So that the discount on products can be calculated automaticly and added to the product. Instead of doing this manually.
+
 ## Technologies used ##
 
 ### Languages ###
@@ -588,7 +592,7 @@ The icon used in the logo is from [flaticon](https://www.flaticon.com/)
 
 ### Special thanks ###
 
-A BIG thank you to [Aukje van der Wal](https://github.com/byIlsa) for helping me with the things i wasn't able to figure out on my own.
+A BIG thank you to [Aukje van der Wal](https://gitlab.com/Aukje) for helping me with the things i wasn't able to figure out on my own.
 
 A thank you to [Keis Gerhardt Smit](https://github.com/KeisGSmit) for his Gymshop project, that helped me create my wishlist model.
 
