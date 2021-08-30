@@ -29,12 +29,12 @@ I have tried to make the site as responsive as possible, but there still might b
 
 ### Home Page ###
 
-Test:
-    - Scroll down on Home Page to see, if all information is displayed correctly and easy to read.
-    - Click on all links provide on the Home page and see if they lead to the correct pages.
-Results:
-    - All information is present and pleasantly presented, leading to the correct pages.
- Verdict: Tests passed, everything works as expected, no bugs were found during the testing. Functionality covered.
+- Test:
+  - Scroll down on Home Page to see, if all information is displayed correctly and easy to read.
+  - Click on all links provide on the Home page and see if they lead to the correct pages.
+- Results:
+  - All information is present and pleasantly presented, leading to the correct pages.
+- Verdict: Tests passed, everything works as expected, no bugs were found during the testing. Functionality covered.
 
 ### Products Page ###
 
