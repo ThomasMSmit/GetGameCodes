@@ -262,3 +262,9 @@ I have used a responsiveness test app [responsively.app](https://responsively.ap
 - *Cause:* The column for the reviews was not found as i did not add them to the postgres database.
 
 - *Solution:* Making new fixtures after adding the reviews in the Django admin and loading them to postgres resolved the issue.
+
+**Error: Property backdrop-filter doesn't exist : blur(10px).**
+
+- *Cause:* It is styling from bootstrap.min.css 4.4.1 so not much i can do about it.
+
+- *Solution:* No solution found. It does not cause any issues, so i left it as it is.
