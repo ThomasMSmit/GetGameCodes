@@ -22,6 +22,21 @@ body {
     box-sizing: border-box;
 }
 
+hr.line {
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+hr.line2 {
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
 /* Navbar styling */
 
 #navbar-top {
