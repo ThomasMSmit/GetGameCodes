@@ -37,6 +37,10 @@ hr.line2 {
     color: white;
 }
 
+.up-arrow {
+    z-index:100
+}
+
 /* Navbar styling */
 
 #navbar-top {
@@ -244,7 +248,13 @@ hr.line2 {
 .wishlist-star {
     background-color:#CC0000;
     color: #000000;
-    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.bag-btn-card {
+    background-color: #00CC00;
+    color: #000000;
+    margin-bottom: 0.5rem;
 }
 
 /* */
@@ -509,6 +519,12 @@ input[name='q']::placeholder {
     .media.media-news .media-body {
         position: relative;
         padding: 2.906rem 2.188rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .up-arrow {
+        visibility: hidden;
     }
 }
 
