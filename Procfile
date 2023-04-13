@@ -1,1 +1,1 @@
-web: gunicorn getgamecodes.wsgi:app
+web:gunicorn getgamecodes.wsgi:app
